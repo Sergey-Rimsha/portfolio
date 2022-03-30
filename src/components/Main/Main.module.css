@@ -1,0 +1,27 @@
+.mainBlock {
+	height: 100vh;
+	border: 1px solid blue;
+	background-color: #d79e9e;
+}
+
+.contentWrap {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.mainInfo {
+	background-color: grey;
+	width: 300px;
+	border: 1px solid red;
+}
+
+.mainPhoto {
+	background-color: grey;
+	width: 300px;
+	height: 300px;
+	border: 1px solid red;
+}

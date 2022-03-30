@@ -1,0 +1,16 @@
+.navWrap {
+	display: flex;
+	height: 100%;
+	justify-content: end;
+	align-items: center;
+	margin-right: 4px;
+
+	/*background: blue;*/
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	border: 1px solid green;
+}
