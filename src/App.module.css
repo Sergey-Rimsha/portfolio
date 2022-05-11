@@ -1,5 +1,5 @@
 .App {
-
+	font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -8,4 +8,5 @@
 	margin: 0 auto;
 	border: 1px solid red;
 }
+
 

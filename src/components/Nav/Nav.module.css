@@ -3,7 +3,6 @@
 	height: 100%;
 	justify-content: end;
 	align-items: center;
-	margin-right: 4px;
 
 	/*background: blue;*/
 }
@@ -14,3 +13,77 @@
 	width: 350px;
 	border: 1px solid green;
 }
+
+.nav__link {
+
+	padding: 29px 0;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.nav__link a {
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
+
+}
+
+.nav__link::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color: red;
+	bottom: 0;
+	/*left: 0;*/
+	/*right: 0;*/
+	transition: 0.3s;
+}
+
+
+.nav__link:hover::before {
+	width: 100%;
+}
+
+.nav__link a:hover::before,
+.nav__link a:focus::before {
+	width: 100%;
+	opacity: 1;
+}
+
+
+
+
+/*a::after {*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	bottom: 0;*/
+/*	left: 0;*/
+/*	width: 100%;*/
+/*	height: 3px;*/
+/*	background-color: white;*/
+/*	opacity: 0;*/
+/*	transition: opacity 300ms, transform 300ms;*/
+/*}*/
+
+/*a:hover::after,*/
+/*a:focus::after {*/
+/*	opacity: 1;*/
+/*	transform: translate3d(0, 1px, 0);*/
+/*}*/
+
+/*li a {*/
+/*	overflow: hidden;*/
+/*}*/
+
+/*li a::after {*/
+/*	opacity: 1;*/
+/*	transform: translate3d(-100%, 0, 0);*/
+/*}*/
+
+/*li a:hover::after,*/
+/*li a:focus::after{*/
+/*	transform: translate3d(0, 0, 0);*/
+/*}*/
