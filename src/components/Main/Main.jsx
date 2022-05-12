@@ -1,26 +1,28 @@
 import React from "react";
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
+
+import photo from '../../assets/ava_main.jpg'
 
 export const Main = (props) => {
 
 	return (
-		<div className={styles.mainBlock}>
+		<div className={styles.main}>
 			<div className={props.styleContainer}>
-				<div className={styles.contentWrap}>
-					<div className={styles.mainInfo}>
-						<h1>
+				<div className={styles.content}>
+					<div className={styles.main__info}>
+						<h1 className={styles.main__title}>
 							I`m Sergey Rimsha
 							<br/>
 							<span>
 								Frontend Developer.
 							</span>
 						</h1>
-						<button>
+						<button className={styles.main__button}>
 							<a href='' download=''>download CV</a>
 						</button>
 					</div>
-					<div className={styles.mainPhoto}>
-						<img src='../../assets/ava_main.jpg' alt='photo'/>
+					<div className={styles.main__photo}>
+						<img name='photo' src={photo} alt='photo'/>
 					</div>
 				</div>
 			</div>

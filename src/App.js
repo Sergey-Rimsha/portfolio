@@ -1,10 +1,10 @@
-import styles from './App.module.css';
+import styles from './App.module.scss';
 import {Header} from "./components/Header/Header";
 import {Main} from "./components/Main/Main";
 import {Skills} from "./components/Skills/Skills";
 import {Works} from "./components/Works/Works";
-import {ContactBlock} from "./components/ContactBlock/ContactBlock";
 import {Footer} from "./components/Footer/Footer";
+import { Contact } from './components/Contact/Contact';
 
 
 
@@ -18,7 +18,7 @@ function App() {
 	        <Main styleContainer={styleContainer}/>
 	        <Skills styleContainer={styleContainer}/>
 	        <Works styleContainer={styleContainer}/>
-	        <ContactBlock styleContainer={styleContainer}/>
+	        <Contact styleContainer={styleContainer}/>
 	        <Footer styleContainer={styleContainer}/>
         </div>
     );

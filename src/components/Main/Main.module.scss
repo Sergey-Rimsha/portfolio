@@ -1,0 +1,74 @@
+@import './../../common/style/variables';
+@import './../../common/style/mixins';
+
+
+.main {
+	height: 100vh;
+	background-color: $mainBgColor;
+
+
+	.content {
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid red;
+
+		@include fontPrimary(900,22px);
+		
+	}
+
+	&__title {
+		color: $textColor;
+
+		& span {
+			color: $primaryColor;
+		}
+	}
+
+	&__button {
+		width: 230px;
+		height: 65px;
+		border-radius: 25px;
+		box-shadow: none;
+		border: solid 1px gray;
+		display: block;
+		background-color: $mainBgColor;
+
+		&:hover {
+			background-color: $primaryColor;
+			border-color: $primaryColor;
+		}
+
+		& a {
+			text-decoration: none;
+			@include fontPrimary(500,16px);	
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			transition: .3s;
+		}
+	}
+
+
+	&__photo {
+		width: 360px;
+
+		& img {
+			display: block;
+			width: 100%;
+			border-radius: 15px;
+		}
+	}
+}
+
+
+
+

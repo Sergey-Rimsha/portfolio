@@ -1,0 +1,8 @@
+@import './variables';
+
+@mixin fontPrimary($fontWeight, $fontSize) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    color: $textColor;
+}

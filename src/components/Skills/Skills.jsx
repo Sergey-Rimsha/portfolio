@@ -1,20 +1,25 @@
 import React from "react";
-import styles from './Skills.module.css';
-import {MySkills} from "../MySkills/MySkills";
+import styles from './Skills.module.scss';
+import {MySkill} from "./MySkills/MySkill";
 
 export const Skills = (props) => {
 
 	return (
-		<div className={styles.skillsBlock}>
+		<div className={styles.skills}>
 			<div className={props.styleContainer}>
-				<div className={styles.contentWrap}>
-					<h2 className={styles.title}>
-						Мои скилы
-					</h2>
-					<div className={styles.mySkillsWrap}>
-						<MySkills />
-						<MySkills />
-						<MySkills />
+				<div className={styles.content}>
+					<div className={styles.skills__title}>
+						<h2>
+							Мои скилы
+						</h2>
+					</div>
+					<div className={styles.skills__wrap}>
+						<MySkill />
+						<MySkill />
+						<MySkill />
+						<MySkill />
+						<MySkill />
+						<MySkill />
 					</div>
 				</div>
 			</div>

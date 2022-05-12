@@ -1,0 +1,47 @@
+@import './../../common/style/mixins';
+@import './../../common/style/variables';
+
+
+
+.block {
+	display: flex;
+	height: 100%;
+	justify-content: end;
+	align-items: center;
+
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		width: 350px;
+		border: 1px solid green;
+
+		&__link {
+			padding: 29px 0;
+			position: relative;
+			overflow: hidden;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 3px;
+				background-color: $primaryColor;
+				bottom: 0;
+				transition: 0.3s;
+			}
+
+			&:hover::before {
+				width: 100%;
+			}
+
+			
+			& a {
+				text-decoration: none;
+				@include fontPrimary(500, 16px);				
+			}
+		}
+	}
+
+}
+

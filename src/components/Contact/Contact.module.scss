@@ -1,0 +1,99 @@
+@import './../../common/style/mixins';
+@import './../../common/style/variables';
+
+.contact {
+	background-color: $mainBgColor;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 30px 0;
+	}
+
+	&__title {
+		padding: 0 0 15px 0;
+		position: relative;
+
+		& h2 {
+			@include fontPrimary(700, 25px);
+			padding: 0;
+			margin: 0;
+		}
+
+		::before {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 50%;
+			background-color: $primaryColor;
+			bottom: 0;
+			transform: translate(50%);	
+		}
+	}
+
+	.form {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		align-items: center;
+
+		
+
+		&__input {
+			width: 100%;
+			margin-top: 15px;
+			height: 40px;
+			border-radius: 5px;
+			border: none;
+			padding: 10px;
+			@include fontPrimary(400, 16px);
+			color: black;
+
+		}
+
+		&__textarea {
+			width: 100%;
+			margin-top: 15px;
+			height: 80px;
+			border-radius: 5px;
+			@include fontPrimary(400, 16px);
+			color: black;
+			padding-top: 30px;
+			padding-left: 10px;
+		}
+
+		&__btn {
+			margin-top: 15px;
+			width: 100px;
+			height: 40px;
+			border-radius: 10px;
+			border: solid 1px white;
+			@include fontPrimary(400, 16px);
+			background-color: $mainBgColor;
+
+			&:hover {
+				background-color: $primaryColor;
+				border-color: $primaryColor;
+			}
+		}
+	}
+
+}
+
+
+
+.title {
+	background-color: gray;
+}
+
+
+.formInput {
+	margin-bottom: 15px;
+}
+
+.formTextarea {
+	min-height: 80px;
+}
