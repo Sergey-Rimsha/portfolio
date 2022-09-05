@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+
 import styles from './Works.module.scss';
-import {Project} from "./Project/Project";
+import {Project} from './Project/Project';
 
 import social from './../../assets/socialNetwork.jpg';
 import todolist from './../../assets/todolist.jpg';
@@ -25,21 +26,21 @@ export const Works = (props) => {
 				<div className={styles.content}>
 					<div className={styles.works__title}>
 						<h2>
-							Мои работы
+							My Latest Project
 						</h2>
 					</div>
 					<div className={styles.works__wrap}>
 						<Project
-							name={`sicial network`} 
+							name={'sicial network'} 
 							style={socialImg} 
 							socialLink={socialLink}/>
 						<Project 
-							name={`todolist`} 
+							name={'todolist'} 
 							style={todolistImg} 
 							socialLink={todoListLink}/>
 					</div>
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

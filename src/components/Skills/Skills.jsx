@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+
 import styles from './Skills.module.scss';
-import {MySkill} from "./MySkills/MySkill";
+import {MySkill} from './MySkills/MySkill';
 
 export const Skills = (props) => {
 
@@ -10,7 +11,7 @@ export const Skills = (props) => {
 				<div className={styles.content}>
 					<div className={styles.skills__title}>
 						<h2>
-							Мои скилы
+							Main Skills
 						</h2>
 					</div>
 					<div className={styles.skills__wrap}>
@@ -24,5 +25,5 @@ export const Skills = (props) => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

@@ -1,7 +1,9 @@
-import React from "react";
-import styles from './Main.module.scss'
+import React from 'react';
 
-import photo from '../../assets/ava_main.jpg'
+import photo from '../../assets/ava_main.jpg';
+
+import styles from './Main.module.scss';
+
 
 export const Main = (props) => {
 
@@ -27,5 +29,5 @@ export const Main = (props) => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

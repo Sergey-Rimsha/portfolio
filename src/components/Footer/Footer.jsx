@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import styles from './Footer.module.scss';
 
 export const Footer = (props) => {
@@ -9,7 +10,7 @@ export const Footer = (props) => {
 				<div className={styles.content}>
 					<div className={styles.footer__title}>
 						<h2>
-							Сергей Римша
+							Sergey Rimsha
 						</h2>
 					</div>
 					<div className={styles.socials}>
@@ -19,10 +20,10 @@ export const Footer = (props) => {
 						<div className={styles.socials__item}></div>
 					</div>
 					<div className={styles.footer__description}>
-						2022 Все права защищены
+						2022 All rights reserved
 					</div>
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

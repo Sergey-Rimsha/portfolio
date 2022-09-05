@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import styles from './Contact.module.scss';
 
 export const Contact = (props) => {
@@ -9,7 +10,7 @@ export const Contact = (props) => {
 				<div className={styles.content}>
 					<div className={styles.contact__title}>
 						<h2>
-							Контакты
+							Hire Me.
 						</h2>
 					</div>
 					<form className={styles.form}>
@@ -30,16 +31,16 @@ export const Contact = (props) => {
 							name={'message'} 
 							placeholder={'Your Message *'}
 						>
-
 						</textarea>
+						
 						<button 
 							className={styles.form__btn} 
-							type="submite" >
-								submite
+							type='submit' >
+								submit
 						</button>
 					</form>
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

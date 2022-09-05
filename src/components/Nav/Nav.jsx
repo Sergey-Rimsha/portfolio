@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import styles from './Nav.module.scss';
 
 
@@ -7,19 +8,19 @@ export const Nav = () => {
 		<div className={styles.block}>
 			<nav className={styles.nav}>
 				<div className={styles.nav__link}>
-					<a href={`#`}>Главная</a>
+					<a href={'#'}>Home</a>
 				</div>
 				<div className={styles.nav__link}>
-					<a href={`#`}>Скилы</a>
+					<a href={'#'}>Skills</a>
 				</div>
 				<div className={styles.nav__link}>
-					<a href={`#`}>Работа</a>
+					<a href={'#'}>Works</a>
 				</div>
 				<div className={styles.nav__link}>
-					<a href={`#`}>Контакты</a>
+					<a href={'#'}>Contact</a>
 				</div>
 
 			</nav>
 		</div>
-	)
-}
+	);
+};

@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react';
+
+import {Nav} from '../Nav/Nav';
+
 import styles from './Header.module.scss';
-import {Nav} from "../Nav/Nav";
 
 
 export const Header = (props) => {
@@ -11,5 +13,5 @@ export const Header = (props) => {
 				<Nav/>
 			</div>
 		</header>
-	)
-}
+	);
+};
